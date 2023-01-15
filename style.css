@@ -1,0 +1,527 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  background-image: url(images/home-img.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  height: 100px;
+  justify-content: space-around;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid white;
+
+}
+
+.links ul li {
+  list-style: none;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+}
+
+.links ul li a::after {
+  width: 0px;
+  content: "";
+  height: 2px;
+  background-color: coral;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: -52px;
+}
+
+.links ul li a:hover::after {
+  width: 50px;
+  transition: 1s;
+  color: coral;
+}
+
+.buying ul li {
+  list-style: none;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.buying ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.search-box {
+  margin-top: 20px;
+  width: 200px;
+  height: 30px;
+  background-color: white;
+  margin-left: 30px;
+  display: flex;
+  border-radius: 5px;
+  display: none;
+}
+
+.search-box form input {
+  width: 95%;
+  height: 100%;
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.buying ul li a:hover {
+  color: coral;
+  transition: a 1s;
+}
+
+.main-content {
+  margin-top: 150px;
+  margin-left: 200px;
+}
+
+.main-content .info .title {
+  font-size: 50px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.main-content .info p {
+  color: white;
+  letter-spacing: 2px;
+}
+
+.main-content .info .click {
+  width: 100px;
+  height: 30px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  margin-top: 30px;
+  cursor: pointer;
+  border: 1px solid white;
+  padding: 4px;
+}
+
+.product-container {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  margin-left: 20px;
+  margin-top: 40px;
+  border-radius: 5px;
+  display: none;
+}
+
+.product-container ul li {
+  list-style: none;
+}
+
+.product-container ul li a {
+  text-decoration: none;
+}
+
+.product-container ul li a img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-left: 30px;
+}
+
+.info-about-product {
+  margin-left: 150px;
+  width: 0px;
+  height: 0px;
+  margin-top: -50px;
+}
+
+.info-about-product h3 {
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.info-about-product p {
+  color: coral;
+}
+
+.check {
+  width: 90%;
+  margin-left: 20px;
+  margin-top: 90px;
+  outline: none;
+  border: none;
+  background-color: coral;
+  color: #fff;
+  height: 30px;
+}
+
+.click span::after {
+  width: 0px;
+  height: 30px;
+  content: "";
+  position: absolute;
+  background-color: coral;
+  left: 201px;
+  box-sizing: border-box;
+  color: white;
+  margin-top: -5px;
+}
+
+.btn:hover::after {
+  width: 100px;
+}
+
+.about-us-section {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+
+}
+
+.about-container-2 {
+  height: 500px;
+  background-color: white;
+  width: 900px;
+  margin-left: 190px;
+  display: flex;
+}
+
+.about {
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.about span {
+  color: coral;
+}
+
+.first-container {
+  width: 450px;
+  height: 500px;
+  background-image: url(images/about-img.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.second-container {
+  width: 450px;
+  height: 500px;
+  background-color: darkslategray;
+}
+
+.second-container .whats {
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 40px;
+}
+
+.first-container:hover {
+  transform: scale(2px);
+  cursor: pointer;
+}
+
+.second-container p {
+  color: white;
+  font-size: 12px;
+  margin: 40px;
+}
+
+.learn-more-button {
+  width: 100px;
+  margin: 40px;
+  background-color: coral;
+  height: 33px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.learn-more-button:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  transition: background 1s;
+  transition-delay: unset;
+}
+
+.product-section {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.title-product-services {
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  top: 50px;
+}
+
+.title-product-services span {
+  color: coral;
+}
+
+.all-product-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 950px;
+  height: 700px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.prods1 {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  border: 1px solid whitesmoke;
+}
+
+.prods0 {
+  margin-top: 40px;
+}
+
+.health {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.prods1 p {
+  color: white;
+  margin-top: 30px;
+}
+
+.add-to-cart {
+  margin-top: 30px;
+  width: 100px;
+  height: 30px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: coral;
+}
+
+.prods1:hover {
+  background-color: coral;
+  color: white;
+  transition: background 1s;
+}
+
+.latest-products {
+  width: 100%;
+  height: 100vh;
+}
+
+.latest-title {
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+.latest-products span {
+  color: coral;
+  margin-top: 50px;
+}
+
+.all-latest-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 70px;
+  margin-top: 50px;
+  height: 90%;
+}
+
+.latest1 {
+  width: 300px;
+  height: 300px;
+  border: 1px solid white;
+  margin-bottom: 10px;
+}
+
+.products-icon ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.products-icon ul li a {
+  text-decoration: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.products-icon ul li a:hover {
+  background-color: coral;
+}
+
+.some-info-about-latest-product img {
+  width: 100px;
+  height: 120px;
+  margin-top: 40px;
+}
+
+.fresh-coffe {
+  color: white;
+  font-size: 23px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.pay {
+  color: white;
+  font-size: 13px;
+  color: coral;
+  margin-top: 10px;
+}
+
+.contact-container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.contact-container .contact-title {
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.contact-container .contact-title span {
+  color: coral;
+}
+
+.container-contact {
+  width: 900px;
+  height: 400px;
+  background-color: darkslategrey;
+  margin-top: 50px;
+  display: flex;
+  margin-left: 250px;
+}
+
+.maps iframe {
+  width: 450px;
+  height: 400px;
+}
+
+.input-box-container {
+  width: 450px;
+  height: 500px;
+}
+
+.getin {
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.contactnow {
+  width: 200px;
+  height: 30px;
+  outline: none;
+  border: none;
+  background-color: coral;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.input-box1 {
+  width: 80%;
+  height: 40px;
+  outline: none;
+  border: 1px solid white;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.input-box1 input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+.input-box1 i {
+  color: white;
+  margin-top: 12px;
+  display: flex;
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+}
+
+.social-media-icons-account ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.social-media-icons-account ul li a {
+  text-decoration: none;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: coral;
+}
+
+.social-media-icons-account ul li a i {
+  color: white;
+  font-size: 20px;
+}
+
+.copyright {
+  color: white;
+  font-size: 19px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.copyright span {
+  color: coral;
+}
+
+
